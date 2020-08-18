@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes"),
+    url("./files/font/TTLakes/TTLakes-Regular.woff2") format("woff2"),
+    url('./files/font/TTLakes/TTLakes-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display:swap;/*можно сделать optional как вариант*/
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes"),
+    url("./files/font/TTLakes/TTLakes-Bold.woff2") format("woff2"),
+    url('./files/font/TTLakes/TTLakes-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes"),
+    url("./files/font/TTLakes/TTLakes-Medium.woff2") format("woff2"),
+    url('./files/font/TTLakes/TTLakes-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display:swap;
+}
+
+@media (max-width:1120px) {
+    body {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        max-width: 700px;
+    }
+}
+
+@media (max-width:767px) {
+    body {
+        max-width: none;
+    }
+}
+
+body{
+    font-family: "TT Lakes", "Arial", "Roboto Light",sans-serif ;
+    font-weight: 400;
+    font-size:32px;
+    background: #F8F8F8;
+}
+.main-header{
+    padding-left: 16px;
+    font-size: 28px;
+    line-height: 40px;
+    /* identical to box height, or 143% */
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    background-image: url("./images/highlight.svg");
+    background-repeat: no-repeat;
+    margin-left: -8px;
+    margin-bottom: 0;
+}
+
+.article {
+    font-size: 14px;
+    line-height: 18px;
+    /* or 143% */
+    color: #1B1C21;
+    margin: 0 16px;
+}
+.header-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 20px;
+    margin: -50px -20px 0 0;
+}
+.header-menu-container:active {
+    border:0;
+}
+.header-menu__header-container {
+    width: 220px;
+    padding-left: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 20px;
+    border: 2px solid black;
+
+}
+
+.header-menu-link__close {
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+    background-image: url("./images/close.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-menu-link__logo {
+        border: none;
+    background-color: transparent;
+    padding: 30px 50px;
+    background-image: url("./images/Group.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-menu-link__search {
+    border: 0;
+    background-color: transparent;
+    padding: 20px;
+    background-image: url("./images/search.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-menu-link {
+    text-decoration: none;
+    font-size: 16px;
+}
+.header-menu-link:focus{
+    display: block;
+    border:4px #41F6D7;
+    color: #7E7E82;
+}
+.header-menu-link:hover {
+    border:4px #41F6D7;
+    color: #7E7E82;
+}
+.header-menu-container {
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+    background-image: url("./images/burger.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-menu-container:focus+.header-menu  {
+    display: block;
+}
+
+.header-menu-container:hover+.header-menu {
+    border: none;
+}
+
+li {
+    list-style-type:none;
+}
+/*блок спойлера*/
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    background-image: url("./images/expand.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: left;
+    padding-left: 24px;
+    vertical-align: bottom;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+details summary:focus {
+    outline: none;
+}
+/*блок спойлера*/
+
+.main-menu {
+    overflow-x: scroll;
+    display: flex;
+    align-items: baseline;
+    margin-left: -60px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-menu__item:focus, .main-menu__item:hover {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background: #FFFFFF;
+    padding: 8px 10px 8px 16px;
+    color: #7E7E82;
+}
+
+.main-menu__item {
+    font-size: 24px;
+    padding: 12px 12px 12px 18px;
+    white-space: nowrap;
+    margin: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.frontpage-image-container {
+    margin: 16px;
+}
