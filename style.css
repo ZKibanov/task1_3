@@ -26,10 +26,9 @@
     font-weight: 500;
     font-style: normal;
     font-display:swap;
-    flex-wrap:nowrap;
 }
 
-@media (min-width: 320px) and (max-width: 767px){
+@media (min-width: 20px) and (max-width: 767px){
     body {
         max-width: none;
     }
@@ -103,8 +102,7 @@ body{
     font-weight: 400;
     font-size:32px;
     background: #F8F8F8;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
 }
 
 .main-header{
@@ -204,7 +202,7 @@ body{
     border: 0;
     background-color: transparent;
     padding: 20px;
-    background-image: url("./images/follow.svg");
+    background-image: url("./images/chat.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -273,14 +271,17 @@ details summary:focus {
     outline: none;
 }
 /*блок спойлера*/
-
+.main-menu__container {
+    overflow: hidden;
+}
 .main-menu {
-    overflow-x: scroll;
+    overflow: auto;
     display: flex;
     align-items: baseline;
     margin-left: -60px;
     margin-top: 0;
     margin-bottom: 0;
+
 }
 
 .main-menu__item:focus, .main-menu__item:hover {
@@ -296,6 +297,7 @@ details summary:focus {
     padding: 12px 12px 12px 18px;
     white-space: nowrap;
     margin: 16px;
+    cursor: pointer;
 }
 
 img {
