@@ -55,6 +55,9 @@
         justify-content: space-around;
        width: 40%;
     }
+    .full-text {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
@@ -86,6 +89,20 @@
         justify-content: space-around;
         width: 30%;
     }
+    .full-text {
+        display: none;
+    }
+
+        .main-section-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    article {
+        width: 40%;
+    }
+    .frontpage-image-container {
+        width: 50%;
+    }
 }
 
 @media (min-width:1120px) {
@@ -94,6 +111,24 @@
     }
     nav {
         display: none;
+    }
+
+    .short-text, .short-text__paragraph {
+        display: none;
+    }
+    .main-section-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    article {
+        width: 50%;
+    }
+    .frontpage-image-container {
+        width: 50%;
+    }
+
+    .main-menu {
+        flex-wrap: wrap;
     }
 }
 
@@ -250,6 +285,7 @@ li {
 /*блок спойлера*/
 summary {
     display: block;
+    cursor: pointer;
 }
 
 summary::-webkit-details-marker {
@@ -259,7 +295,6 @@ summary::-webkit-details-marker {
 summary {
     background-image: url("./images/expand.svg");
     background-repeat: no-repeat;
-    background-position: top;
     background-position: left;
     padding-left: 24px;
     vertical-align: bottom;
@@ -307,4 +342,8 @@ img {
 
 .frontpage-image-container {
     margin: 16px;
+}
+
+button {
+    cursor: pointer;
 }
