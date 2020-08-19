@@ -26,23 +26,62 @@
     font-weight: 500;
     font-style: normal;
     font-display:swap;
+    flex-wrap:nowrap;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    body {
+        max-width: none;
+    }
+    nav {
+        background: white;
+        max-height: 88px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:nowrap;
+        border-bottom: 1px solid #41F6D7;
+    }
+
+    .left-main-menu-part {
+        display: flex;
+        justify-content: space-around;
+        width:60%;
+    }
+    .right-main-menu-part {
+        display: flex;
+        justify-content: space-around;
+       width: 40%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+    body {
+        max-width: 768px;
+    }
+    nav {
+        background: white;
+        max-height: 88px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:nowrap;
+        border-bottom: 1px solid #41F6D7;
+    }
+
+    .left-main-menu-part {
+        display: flex;
+        justify-content: space-around;
+        width:60%;
+    }
+    .right-main-menu-part {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
 }
 
 @media (max-width:1120px) {
     body {
-        max-width: 1000px;
-    }
-}
-
-@media (max-width:768px) {
-    body {
-        max-width: 700px;
-    }
-}
-
-@media (max-width:767px) {
-    body {
-        max-width: none;
+        max-width: 1120px;
     }
 }
 
@@ -52,6 +91,7 @@ body{
     font-size:32px;
     background: #F8F8F8;
 }
+
 .main-header{
     padding-left: 16px;
     font-size: 28px;
@@ -117,6 +157,25 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.header-menu-link__checkstatus{
+    border: 0;
+    background-color: transparent;
+    padding: 20px;
+    background-image: url("./images/checkstatus-1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-menu-link__repair {
+    border: 0;
+    background-color: transparent;
+    padding: 20px;
+    background-image: url("./images/repair.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .header-menu-link {
     text-decoration: none;
     font-size: 16px;
