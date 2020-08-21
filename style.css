@@ -41,21 +41,21 @@
         border-bottom: 1px solid #41F6D7;
     }
 
-         .center-main-menu-part {
+         .main-menu__central-part {
           display: none;
           }
 
-    .left-main-menu-part {
+    .header-menu__left-part {
         display: flex;
         justify-content: space-around;
         width:60%;
     }
-    .right-main-menu-part {
+    .main-menu__right-part {
         display: flex;
         justify-content: space-around;
        width: 40%;
     }
-    .full-text {
+    .article>.full-text, .article>.article__full-text__read-more {
         display: none;
     }
 }
@@ -73,31 +73,31 @@
         border-bottom: 1px solid #41F6D7;
     }
 
-    .left-main-menu-part {
+    .header-menu__left-part {
         display: flex;
         justify-content: space-around;
         width:30%;
             }
-    .center-main-menu-part {
+    .main-menu__central-part {
         display: flex;
         justify-content: space-around;
         flex-wrap:nowrap;
         width: 30%;
     }
-    .right-main-menu-part {
+    .main-menu__right-part {
         display: flex;
         justify-content: space-around;
         width: 30%;
     }
-    .full-text {
+    .article>.full-text, .article>.article__full-text__read-more {
         display: none;
     }
 
-        .main-section-container {
+    .main-section-container {
         display: flex;
         justify-content: space-between;
     }
-    article {
+    .article {
         width: 40%;
     }
     .frontpage-image-container {
@@ -113,22 +113,23 @@
         display: none;
     }
 
-    .short-text, .short-text__paragraph {
+    details>.article__read-more, .article>.article__short-text-paragraph {
         display: none;
     }
     .main-section-container {
         display: flex;
         justify-content: space-between;
     }
-    article {
+    .article {
         width: 50%;
     }
     .frontpage-image-container {
         width: 50%;
     }
 
-    .main-menu {
+    .main-menu__container>.main-menu {
         flex-wrap: wrap;
+        overflow-x:hidden;
     }
 }
 
@@ -160,23 +161,23 @@ body{
     color: #1B1C21;
     margin: 0 16px;
 }
-.header-menu {
+.burger-menu__header-menu {
+    width: 320px;
     display: none;
     position: absolute;
     background-color: #fff;
     padding: 20px;
     margin: -50px -20px 0 0;
 }
-.header-menu-container:active {
-    border:0;
-}
-.header-menu__header-container {
-    width: 220px;
+
+.burger-menu__link-container {
+
+    width: 100%;
     padding-left: 0;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin: 20px;
+    margin: 20px 0 0 0;
     border: 2px solid black;
 
 }
@@ -250,20 +251,21 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-.header-menu-link {
+.burger-menu__link__header-menu {
     text-decoration: none;
     font-size: 16px;
 }
-.header-menu-link:focus{
+.burger-menu__link__header-menu:focus{
     display: block;
     border:4px #41F6D7;
     color: #7E7E82;
 }
-.header-menu-link:hover {
+.burger-menu__link__header-menu:hover {
     border:4px #41F6D7;
     color: #7E7E82;
 }
-.header-menu-container {
+
+.burger-menu-button {
     border: none;
     background-color: transparent;
     padding: 20px;
@@ -271,28 +273,37 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-.header-menu-container:focus+.header-menu  {
+
+.burger-menu-button:active {
+    border:0;
+}
+
+.burger-menu-button:focus+.burger-menu__header-menu  {
     display: block;
 }
 
-.header-menu-container:hover+.header-menu {
+.burger-menu-button:hover+.burger-menu__header-menu {
     border: none;
+}
+
+.burger-menu__link {
+    font-size: 16px;
+    color: #1B1C21;
+    font-weight: 500;
 }
 
 li {
     list-style-type:none;
 }
 /*блок спойлера*/
-summary {
-    display: block;
-    cursor: pointer;
-}
 
-summary::-webkit-details-marker {
+.article__read-more::-webkit-details-marker {
     display: none;
 }
 
-summary {
+.read-more {
+    display: block;
+    cursor: pointer;
     background-image: url("./images/expand.svg");
     background-repeat: no-repeat;
     background-position: left;
@@ -306,11 +317,9 @@ details summary:focus {
     outline: none;
 }
 /*блок спойлера*/
-.main-menu__container {
-    overflow: hidden;
-}
+
 .main-menu {
-    overflow: auto;
+    overflow-x: scroll;
     display: flex;
     align-items: baseline;
     margin-left: -60px;
@@ -335,7 +344,7 @@ details summary:focus {
     cursor: pointer;
 }
 
-img {
+.frontpage-image {
     max-width: 100%;
     height: auto;
 }
@@ -346,4 +355,8 @@ img {
 
 button {
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
 }
