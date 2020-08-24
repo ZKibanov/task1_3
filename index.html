@@ -9,64 +9,45 @@
 <body>
 <header>
 
-    <nav class="navigation">
+    <div class="header-menu">
         <div class="header-menu__left-part">
-        <button class="burger-menu-button"></button>
-        <ul class="burger-menu__header-menu">
-            <li class="burger-menu__link__header-menu">
-                <ul class="burger-menu__link-container">
-                    <li><button class="header-menu-link__close"></button></li>
-                    <li><button class="header-menu-link__logo"></button></li>
-                    <li><button class="header-menu-link__search"></button></li>
-                </ul></li>
-            <li><a href="all.html" class="burger-menu__link">Ремонт техники</a></li>
-            <li><a href="all.html" class="burger-menu__link">Услуги и сервисы</a></li>
-            <li><a href="all.html" class="burger-menu__link">Корпоративным клиентам</a></li>
-            <li><a href="all.html" class="burger-menu__link">Продавцам техники</a></li>
-            <li><a href="all.html" class="burger-menu__link">Партнерам</a></li>
-            <li><a href="all.html" class="burger-menu__link">Производителям</a></li>
-            <li><a href="all.html" class="burger-menu__link">Наши сервисные центры</a></li>
-            <li><a href="all.html" class="burger-menu__link">Контакты</a></li>
-        </ul>
-
-        <button class="header-menu-link__logo"></button>
+            <button class="burger-menu-button"></button>
+            <div class="logo"><a class="logo__link" >
+                <img class="logo__image" src="./images/Group.svg" width="98" height="52" alt="Logo"></a>
+            </div>
         </div>
-        <img src="./images/divider.svg" alt="divider">
-        <div class="main-menu__central-part">
+
+        <div class="header-menu__central-part">
+            <div class="divider"></div>
             <button class="header-menu-link__call"></button>
             <button class="header-menu-link__message"></button>
-            <button class="header-menu-link__contacts"></button>
-            <img src="./images/divider.svg" alt="divider">
+            <a href="#" class="header-menu-link__contacts"></a>
+            <div class="divider"></div>
         </div>
 
-        <div class="main-menu__right-part">
-            <button class="header-menu-link__checkstatus"></button>
-            <button class="header-menu-link__repair"></button>
+        <div class="header-menu__right-part">
+            <a href="#" class="header-menu-link__repair">Оставить заявку</a>
+            <a href="#" class="header-menu-link__checkstatus">Статус ремонта</a>
         </div>
 
 
+    </div>
+        <h1 class="title">Услуги и сервисы</h1>
+
+    <nav class="main-menu__container">
+        <ul class="main-menu">
+            <li class="main-menu__item"><a href="#">Ремонтируемые бренды</a></li>
+            <li class="main-menu__item"><a href="#">Ремонтируемые устройства</a></li>
+            <li class="main-menu__item"><a href="#">Цены на услуги</a></li>
+            <li class="main-menu__item"><a href="#">Адреса сервисных центров</a></li>
+            <li class="main-menu__item"><a href="#">Специальные цены</a></li>
+            <li class="main-menu__item"><a href="#">Отзывы</a></li>
+        </ul>
     </nav>
 </header>
 <main>
-    <div class="header-container">
-    <h1 class="main-header">Услуги и сервисы</h1>
-    <div class="header-pc-version__menu">
-        <div class="header-pc-version__right-part">
-            <button class="header-menu-link__repair">Оставить заявку</button>
-            <button class="header-menu-link__checkstatus">Статус ремонта</button>
-        </div>
-    </div>
-    </div>
-    <div class="main-menu__container">
-    <ul class="main-menu">
-        <li class="main-menu__item">Ремонтируемые бренды</li>
-        <li class="main-menu__item">Ремонтируемые устройства</li>
-        <li class="main-menu__item">Цены на услуги</li>
-        <li class="main-menu__item">Адреса сервисных центров</li>
-        <li class="main-menu__item">Специальные цены</li>
-        <li class="main-menu__item">Отзывы</li>
-    </ul>
-    </div>
+
+
     <div class="main-section-container">
     <article class="article"><p class="article__short-text-paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
         Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
