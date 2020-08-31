@@ -36,24 +36,19 @@
         background: white;
         max-height: 88px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap:nowrap;
         border-bottom: 1px solid #41F6D7;
     }
 
-         .header-menu__central-part {
-          display: none;
-          }
-
-    .header-menu__left-part {
-        display: flex;
-        justify-content: space-around;
-        width:60%;
+    .header-menu__contacts-part {
+         display: none;
     }
-    .header-menu__right-part {
+
+    .header-menu__tech-part {
         display: flex;
         justify-content: space-around;
-       width: 40%;
+        width: 40%;
     }
     .article>.full-text, .article>.article__full-text__read-more {
         display: none;
@@ -66,8 +61,16 @@
         margin: 16px 0;
     }
 
-    .header-menu__right-part>a {
+    .header-menu__tech-part>a {
         font-size: 0;
+    }
+
+    .header-menu__tech-part::before {
+        content: '';
+        background-image: url("./images/divider.svg");
+        padding: 16px 2px;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -75,30 +78,26 @@
     body {
         max-width: 100%;
     }
+
     .header-menu {
         background: white;
         max-height: 88px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap:nowrap;
         border-bottom: 1px solid #41F6D7;
     }
 
-    .header-menu__left-part {
-        display: flex;
-        justify-content: space-around;
-        width:30%;
-            }
-    .header-menu__central-part {
+    .header-menu__contacts-part {
         display: flex;
         justify-content: flex-end;
         flex-wrap:nowrap;
-        width: 45%;
+        width: 50%;
     }
-    .header-menu__right-part {
+    .header-menu__tech-part {
         display: flex;
         justify-content: space-around;
-        width: 15%;
+        width: 156px;
     }
     .article>.full-text, .article>.article__full-text__read-more {
         display: none;
@@ -119,10 +118,25 @@
         border-radius: 10px;
     }
 
-    .header-menu__right-part>a {
+    .header-menu__tech-part>a {
         font-size: 0;
     }
 
+    .header-menu__tech-part::before {
+        content: '';
+        background-image: url("./images/divider.svg");
+        padding: 16px 2px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .header-logo::before {
+        content: '';
+        background-image: url("./images/divider.svg");
+        padding: 16px 2px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
 }
 
@@ -130,7 +144,7 @@
     body {
         max-width: 100%;
     }
-    .header-menu__central-part, .header-menu__left-part {
+    .header-menu__contacts-part, .burger-menu-button, .logo {
         display: none;
     }
 
@@ -149,12 +163,13 @@
         flex-wrap: wrap;
         overflow-x:hidden;
     }
+
     .header-container {
         margin-top: 34px;
         display: flex;
         justify-content: space-between;
     }
-    .header-menu__right-part>a {
+    .header-menu__tech-part>a {
         background-position: right;
         padding-right: 50px;
         margin-right: 32px;
@@ -200,7 +215,6 @@ body{
 }
 
 .title {
-    padding-left: 16px;
     font-size: 28px;
     line-height: 40px;
     /* identical to box height, or 143% */
@@ -208,6 +222,11 @@ body{
     color: #1B1C21;
     background-image: url("./images/highlight.svg");
     background-repeat: no-repeat;
+
+}
+
+.header-title {
+    padding-left: 16px;
     margin-left: 0;
     margin-bottom: 0;
 }
@@ -229,7 +248,6 @@ body{
 }
 
 .burger-menu__link-container {
-
     width: 100%;
     padding-left: 0;
     display: flex;
@@ -249,17 +267,15 @@ body{
     background-repeat: no-repeat;
 }
 .logo {
+    border: 2px solid red;
     height: 52px;
     background-color: transparent;
+}
+
+.header-logo {
     margin: 8px;
 }
 
-.divider {
-    background-image: url("./images/divider.svg");
-    padding: 16px 2px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 
 .header-menu-link__search {
@@ -402,14 +418,17 @@ details summary:focus {
     padding: 8px 10px 8px 16px;
     color: #7E7E82;
 }
-
-.main-menu__item {
-    font-size: 24px;
-    padding: 12px 12px 12px 18px;
+.main-menu__container {
     white-space: nowrap;
     margin: 16px;
+}
+
+.main-menu__item {
+    padding: 12px 12px 12px 18px;
+    font-size: 16px;
     cursor: pointer;
 }
+
 
 .frontpage-image {
     max-width: 100%;

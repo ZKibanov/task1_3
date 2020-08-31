@@ -10,43 +10,39 @@
 <header>
 
     <div class="header-menu">
-        <div class="header-menu__left-part">
-            <button class="burger-menu-button"></button>
-            <div class="logo"><a class="logo__link" >
-                <img class="logo__image" src="./images/Group.svg" width="98" height="52" alt="Logo"></a>
-            </div>
+        <button class="burger-menu-button"></button>
+        <div class="logo header-logo">
+            <a class="logo__link" ><img class="logo__image" src="./images/Group.svg" width="98" height="52" alt="Logo"></a>
         </div>
 
-        <div class="header-menu__central-part">
-            <div class="divider"></div>
-            <button class="header-menu-link__call"></button>
-            <button class="header-menu-link__message"></button>
-            <a href="#" class="header-menu-link__contacts"></a>
-            <div class="divider"></div>
-        </div>
 
-        <div class="header-menu__right-part">
+        <ul class="header-menu__contacts-part">
+            <li><button class="header-menu-link__call"></button></li>
+            <li><button class="header-menu-link__message"></button></li>
+            <li><a href="#" class="header-menu-link__contacts"></a></li>
+        </ul>
+
+        <div class="header-menu__tech-part">
             <a href="#" class="header-menu-link__repair">Оставить заявку</a>
             <a href="#" class="header-menu-link__checkstatus">Статус ремонта</a>
         </div>
 
 
     </div>
-        <h1 class="title">Услуги и сервисы</h1>
+        <h1 class="title header-title">Услуги и сервисы</h1>
 
-    <nav class="main-menu__container">
-        <ul class="main-menu">
-            <li class="main-menu__item"><a href="#">Ремонтируемые бренды</a></li>
-            <li class="main-menu__item"><a href="#">Ремонтируемые устройства</a></li>
-            <li class="main-menu__item"><a href="#">Цены на услуги</a></li>
-            <li class="main-menu__item"><a href="#">Адреса сервисных центров</a></li>
-            <li class="main-menu__item"><a href="#">Специальные цены</a></li>
-            <li class="main-menu__item"><a href="#">Отзывы</a></li>
-        </ul>
-    </nav>
 </header>
 <main>
-
+    <nav class="main-menu__container">
+        <ul class="main-menu">
+            <li class="main-menu__item__container"><a class="main-menu__item" href="#">Ремонтируемые бренды</a></li>
+            <li class="main-menu__item__container"><a class="main-menu__item" href="#">Ремонтируемые устройства</a></li>
+            <li class="main-menu__item__container"><a class="main-menu__item" href="#">Цены на услуги</a></li>
+            <li class="main-menu__item__container"><a class="main-menu__item" href="#">Адреса сервисных центров</a></li>
+            <li class="main-menu__item__container"><a class="main-menu__item" href="#">Специальные цены</a></li>
+            <li class="main-menu__item__container"><a class="main-menu__item" href="#">Отзывы</a></li>
+        </ul>
+    </nav>
 
     <div class="main-section-container">
     <article class="article"><p class="article__short-text-paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
