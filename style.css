@@ -51,6 +51,13 @@
     margin: 16px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
 @media (min-width: 20px) and (max-width: 767px){
     .body {
         max-width: none;
@@ -60,6 +67,7 @@
         max-height: 88px;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         flex-wrap:nowrap;
         border-bottom: 1px solid #41F6D7;
     }
@@ -124,6 +132,7 @@
         max-height: 88px;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         flex-wrap:nowrap;
         border-bottom: 1px solid #41F6D7;
     }
@@ -236,7 +245,6 @@
         padding: 20px;
         background-image: url("./images/repair.svg");
         background-repeat: no-repeat;
-        border: 2px solid red;
     }
 
     .header-menu__link-status {
@@ -245,7 +253,6 @@
         padding: 20px;
         background-image: url("./images/checkstatus-1.svg");
         background-repeat: no-repeat;
-        border: 2px solid red;
     }
 
     .header-menu__link-repair_text-visible, .header-menu__link-status_text-visible {
@@ -310,13 +317,7 @@
     margin: 0 16px;
 }
 
-.logo {
-    height: 52px;
-    background-color: transparent;
-}
-
 .header__logo {
-    margin: 8px;
 }
 
 
