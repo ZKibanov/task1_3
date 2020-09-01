@@ -27,10 +27,10 @@
     font-style: normal;
     font-display:swap;
 }
-.header-menu__contacts-part, .header-menu__tech-part {
+.contact-list, .header-menu__tech-part {
     list-style-type:none;
 }
-.link {
+.nav__link, .header-menu__item {
     text-decoration: none;
     color: #1B1C21;
     display: block;
@@ -72,7 +72,7 @@
         border-bottom: 1px solid #41F6D7;
     }
 
-    .header-menu__contacts-part {
+    .contact-list {
         display: none;
     }
 
@@ -137,7 +137,7 @@
         border-bottom: 1px solid #41F6D7;
     }
 
-    .header-menu__contacts-part {
+    .contact-list {
         display: flex;
         justify-content: flex-end;
         flex-wrap:nowrap;
@@ -196,6 +196,16 @@
         background-repeat: no-repeat;
     }
 
+    .logo::before {
+        content: '';
+        background-image: url("./images/divider.svg");
+        padding: 16px 2px;
+        position: relative;
+        left: -20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
 }
 
 @media (min-width:1120px) {
@@ -203,7 +213,7 @@
         max-width: 100%;
     }
 
-    .header-menu__contacts-part, .burger-menu-button, .logo {
+    .contact-list, .burger-menu-button, .logo {
         display: none;
     }
 
