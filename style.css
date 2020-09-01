@@ -52,7 +52,7 @@
 }
 
 @media (min-width: 20px) and (max-width: 767px){
-    body {
+    .body {
         max-width: none;
     }
     .header-menu {
@@ -115,7 +115,7 @@
 }    
 
 @media (min-width: 768px) and (max-width: 1119px) {
-    body {
+    .body {
         max-width: 100%;
     }
 
@@ -190,7 +190,7 @@
 }
 
 @media (min-width:1120px) {
-    body {
+    .body {
         max-width: 100%;
     }
 
@@ -214,11 +214,12 @@
 
     .header {
         display: flex;
+        justify-content: space-between;
+        align-items: baseline;
     }
 
     .header-menu {
         display: flex;
-        width: 600px;
     }
     .title {
         justify-self: flex-start;
@@ -235,6 +236,7 @@
         padding: 20px;
         background-image: url("./images/repair.svg");
         background-repeat: no-repeat;
+        border: 2px solid red;
     }
 
     .header-menu__link-status {
@@ -243,6 +245,7 @@
         padding: 20px;
         background-image: url("./images/checkstatus-1.svg");
         background-repeat: no-repeat;
+        border: 2px solid red;
     }
 
     .header-menu__link-repair_text-visible, .header-menu__link-status_text-visible {
@@ -274,7 +277,7 @@
 }
 /*Основной блок разметки*/
 
-body{
+.body{
     font-family: "TT Lakes", "Arial", "Roboto Light",sans-serif ;
     font-weight: 400;
     font-size:32px;
