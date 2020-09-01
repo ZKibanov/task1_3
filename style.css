@@ -45,6 +45,10 @@
     cursor: pointer;
 }
 
+.frontpage-image-container {
+    margin: 16px;
+}
+
 @media (min-width: 20px) and (max-width: 767px){
     body {
         max-width: none;
@@ -204,12 +208,6 @@
     .nav__list {
         flex-wrap: wrap;
         overflow-x:hidden;
-    }
-
-    .header-menu {
-        margin-top: 34px;
-        display: flex;
-        justify-content: space-between;
     }
 
     .header-menu {
@@ -392,7 +390,4 @@ li {
     height: auto;
 }
 
-.frontpage-image-container {
-    margin: 16px;
-}
 
