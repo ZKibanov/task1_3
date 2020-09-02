@@ -238,7 +238,7 @@
         align-items: baseline;
     }
 
-    .title {
+    .main__title {
         width: 400px;
           }
 
@@ -304,7 +304,7 @@
     margin: 0;
 }
 
-.title {
+.main__title {
     font-size: 28px;
     line-height: 40px;
     /* identical to box height, or 143% */
@@ -315,7 +315,7 @@
 
 }
 
-.header-title {
+.main__title {
     padding-left: 16px;
     margin-left: 0;
     margin-bottom: 0;
@@ -328,10 +328,6 @@
     color: #1B1C21;
     margin: 0 16px;
 }
-
-.header__logo {
-}
-
 
 .header-menu__link-call {
     border: 0;
