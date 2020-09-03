@@ -27,10 +27,10 @@
     font-style: normal;
     font-display:swap;
 }
-.contact-list, .header-menu__tech-part {
+.contact-list, .service-list {
     list-style-type:none;
 }
-.nav__link, .header-menu__item {
+.link, .service-list__button_text-visible {
     text-decoration: none;
     color: #1B1C21;
     display: block;
@@ -77,22 +77,25 @@
         display: none;
     }
 
-    .header-menu__tech-part {
+    .service-list {
         display: flex;
         justify-content: space-around;
         width: 156px;
     }
 
     .article__image {
-        margin: 16px 0;
+        min-width: 100%;
+        height: auto;
+        margin: auto -16px;
+
     }
 
-    .frontpage-image {
-        width: 100%;
+    .article__frontpage-image {
+        min-width: 100%;
         height: auto;
     }
 
-    .header-menu__link-status {
+    .service-list__link-status {
         border: 0;
         background-color: transparent;
         padding: 20px;
@@ -101,7 +104,7 @@
         background-repeat: no-repeat;
     }
 
-    .header-menu__link-repair {
+    .service-list__link-repair {
         border: 0;
         background-color: transparent;
         padding: 20px;
@@ -110,14 +113,16 @@
         background-repeat: no-repeat;
     }
 
-    .header-menu__link-repair_text-visible, .header-menu__link-status_text-visible {
+    .service-list__button_text-visible {
         font-size: 0;
     }
 
-    .header-menu__tech-part::before {
+    .service-list::before {
         content: '';
         background-image: url("./images/divider.svg");
         padding: 16px 2px;
+        position: relative;
+        left: -20px;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -144,34 +149,35 @@
         flex-wrap:nowrap;
         width: 50%;
     }
-    .header-menu__tech-part {
+    .service-list {
         display: flex;
         justify-content: space-around;
         width: 156px;
     }
 
-    .content {
+
+    .article {
         display: flex;
         justify-content: space-between;
     }
 
-    .article {
-        width: 40%;
+    .article__content {
+        width: 50%;
     }
 
     .article__image {
         width: 50%;
     }
 
-    .frontpage-image {
+    .article__frontpage-image {
         border-radius: 10px;
     }
 
-    .header-menu__link-repair_text-visible, .header-menu__link-status_text-visible {
+    .service-list__button_text-visible {
         font-size: 0;
     }
 
-    .header-menu__link-status {
+    .service-list__link-status {
         border: 0;
         background-color: transparent;
         padding: 20px;
@@ -180,7 +186,7 @@
         background-repeat: no-repeat;
     }
 
-    .header-menu__link-repair {
+    .service-list__link-repair {
         border: 0;
         background-color: transparent;
         padding: 20px;
@@ -189,15 +195,17 @@
         background-repeat: no-repeat;
     }
 
-    .header-menu__tech-part::before {
+    .header-menu__service-list::before {
         content: '';
         background-image: url("./images/divider.svg");
         padding: 16px 2px;
+        position: relative;
+        left: -20px;
         background-position: center;
         background-repeat: no-repeat;
     }
 
-    .logo::before {
+    .header__logo::before {
         content: '';
         background-image: url("./images/divider.svg");
         padding: 16px 2px;
@@ -218,12 +226,12 @@
         display: none;
     }
 
-    .content {
+    .article {
         display: flex;
         justify-content: space-between;
     }
 
-    .article {
+    .article__content {
         width: 50%;
     }
 
@@ -232,7 +240,7 @@
         overflow-x:hidden;
     }
 
-    .header {
+    .header-menu {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
@@ -242,7 +250,7 @@
         width: 400px;
           }
 
-    .header-menu__tech-part {
+    .header-menu__service-list {
         margin-top: auto;
         position: absolute;
         right: 0;
@@ -251,7 +259,7 @@
         width: 500px;
     }
 
-    .header-menu__link-repair {
+    .service-list__link-repair {
         border: 0;
         background-color: transparent;
         padding: 20px;
@@ -259,7 +267,7 @@
         background-repeat: no-repeat;
     }
 
-    .header-menu__link-status {
+    .service-list__link-status {
         border: 0;
         background-color: transparent;
         padding: 20px;
@@ -267,7 +275,7 @@
         background-repeat: no-repeat;
     }
 
-    .header-menu__link-repair_text-visible, .header-menu__link-status_text-visible {
+    .service-list__button_text-visible {
         background-position: right;
         padding-right: 50px;
         margin-right: 32px;
@@ -287,10 +295,8 @@
         width: 50%;
     }
 
-    .frontpage-image {
+    .article__frontpage-image {
         border-radius: 10px;
-        width: 100%;
-        height: auto;
     }
 
 }
@@ -304,7 +310,7 @@
     margin: 0;
 }
 
-.main__title {
+.title {
     font-size: 28px;
     line-height: 40px;
     /* identical to box height, or 143% */
@@ -329,7 +335,7 @@
     margin: 0 16px;
 }
 
-.header-menu__link-call {
+.contact-list__link-call {
     border: 0;
     background-color: transparent;
     padding: 20px;
@@ -339,7 +345,7 @@
     background-repeat: no-repeat;
 }
 
-.header-menu__link-message {
+.contact-list__link-message {
     border: 0;
     background-color: transparent;
     padding: 20px;
@@ -349,7 +355,7 @@
     background-repeat: no-repeat;
 }
 
-.header-menu__link-contacts {
+.contact-list__link-contacts {
     border: 0;
     background-color: transparent;
     padding: 20px;
@@ -368,18 +374,26 @@
     background-repeat: no-repeat;
 }
 
+.header-menu__burger-menu-button {
+    margin-left: 20px;
+}
+
 .nav {
     white-space: nowrap;
     margin: 16px;
+}
+
+.main__nav {
+    margin-left: -50px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .nav__list {
     overflow-x: scroll;
     display: flex;
     align-items: baseline;
-    margin-left: -60px;
-    margin-top: 0;
-    margin-bottom: 0;
+
 }
 
 .nav__item {
@@ -397,8 +411,8 @@
     color: #7E7E82;
 }
 
-.frontpage-image {
-    max-width: 100%;
+.article__frontpage-image {
+    width: 100%;
     height: auto;
 }
 

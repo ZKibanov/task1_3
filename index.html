@@ -7,58 +7,50 @@
     <title>CPS</title>
 </head>
 <body class="body">
-<header class="header">
-
-    <div class="header-menu">
-        <button class="burger-menu-button button"></button>
+<header class="header-menu">
+        <button class="header-menu__burger-menu-button burger-menu-button button"></button>
         <div class="logo header__logo">
             <a class="logo__link" ><img class="logo__image" src="./images/Group.svg" width="98" height="52" alt="Logo"></a>
         </div>
 
-
-        <ul class="contact-list">
-            <li><button class="header-menu__link-call button contact-list__item"></button></li>
-            <li><button class="header-menu__link-message button contact-list__item"></button></li>
-            <li><a href="#" class="header-menu__link-contacts contact-list__item"></a></li>
+        <ul class="header-menu__contact-list contact-list">
+            <li class="contact-list__item"><button class="contact-list__link-call button"></button></li>
+            <li class="contact-list__item"><button class="contact-list__link-message button"></button></li>
+            <li class="contact-list__item"><a href="#" class="contact-list__link-contacts button"></a></li>
         </ul>
 
-        <ul class="header-menu__tech-part">
-            <li><a href="#" class="header-menu__link-repair header-menu__link-repair_text-visible header-menu__item">Оставить заявку</a></li>
-            <li><a href="#" class="header-menu__link-status header-menu__link-status_text-visible header-menu__item">Статус ремонта</a></li>
+        <ul class="header-menu__service-list service-list">
+            <li class="service-list__item"><a href="#" class="service-list__link-repair service-list__button_text-visible button">Оставить заявку</a></li>
+            <li class="service-list__item"><a href="#" class="service-list__link-status service-list__button_text-visible button">Статус ремонта</a></li>
         </ul>
-
-    </div>
-
-
 </header>
+
 <main>
-    <h1 class="main__title">Услуги и сервисы</h1>
-    <nav class="nav">
+    <h1 class="main__title title">Услуги и сервисы</h1>
+    <nav class="main__nav nav">
         <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#">Ремонтируемые бренды</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Ремонтируемые устройства</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Цены на услуги</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Адреса сервисных центров</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Специальные цены</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#">Ремонтируемые бренды</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#">Ремонтируемые устройства</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#">Цены на услуги</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#">Адреса сервисных центров</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#">Специальные цены</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#">Отзывы</a></li>
         </ul>
     </nav>
 
-    <div class="content">
     <article class="article">
         <div class="article__content">
             <div class="article__content-inner">
         <p class="article__content-text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
         Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-
+            </div>
             <button class="article__btn-more btn-more">Читать далее</button>
             <p class="article__content-text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.
             Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
             </div>
-        </div>
+        <div class="article__image"><img class="article__frontpage-image" src="./images/IMG_3223.png" height="307" width="532" alt="Наш центр"></div>
     </article>
-    <div class="article__image"><img class="frontpage-image" src="./images/IMG_3223.png" height="307" width="532" alt="Наш центр"></div>
-    </div>
+
 </main>
 </body>
 </html>
