@@ -48,7 +48,9 @@
 .article__image {
     margin: 16px;
 }
-
+.article__content--positioner {
+    margin: 16px;
+}
 .logo {
     display: flex;
     align-items: center;
@@ -150,12 +152,12 @@
         justify-content: space-between;
     }
 
-    .article__content {
-        width: 50%;
+    .article__content--positioner {
+        min-width: 45%;
     }
 
     .article__image {
-        width: 50%;
+        min-width: 45%;
     }
 
     .article__image-pic {
@@ -203,10 +205,6 @@
     .article {
         display: flex;
         justify-content: space-between;
-    }
-
-    .article__content {
-        width: 50%;
     }
 
     .nav__list {
@@ -269,8 +267,12 @@
         margin-right: auto;
     }
 
+    .article__content--positioner {
+        min-width: 45%;
+    }
+
     .article__image {
-        width: 50%;
+        min-width: 45%;
     }
 
     .article__image-pic {
